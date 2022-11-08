@@ -6,6 +6,12 @@ $(".btn").click(function(){
    $(".menu2").toggleClass('left0');
 });
 
+$(".main").click(function(){
+   $(".menu_burger2").removeClass('opac1');
+   $(".menu_burger").removeClass('opac0');
+   $(".menu2").removeClass('left0');
+});
+
 
 // script header end
 
@@ -109,6 +115,9 @@ function show1() {
    page3.classList.remove('show2');
    main.classList.remove('height2');
    page3.classList.remove('height1');
+   main.classList.toggle('height22');
+   page1.classList.toggle('height22');
+   main.classList.remove('height33');
 }
 
 function show2() {
@@ -117,6 +126,9 @@ function show2() {
    page3.classList.remove('show2');
    main.classList.remove('height2');
    page3.classList.remove('height1');
+   main.classList.remove('height22');
+   page1.classList.remove('height22');
+   main.classList.remove('height33');
 }
 
 function show3() {
@@ -125,6 +137,9 @@ function show3() {
    page1.classList.remove('show1');
    page2.classList.remove('show1');
    main.classList.toggle('height2');
+   main.classList.remove('height22');
+   page1.classList.remove('height22');
+   main.classList.toggle('height33');
 }
 
 // script changing pages end
