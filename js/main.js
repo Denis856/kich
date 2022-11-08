@@ -10,6 +10,7 @@ $(".main").click(function(){
    $(".menu_burger2").removeClass('opac1');
    $(".menu_burger").removeClass('opac0');
    $(".menu2").removeClass('left0');
+   $(".thing2").removeClass('tyr');
 });
 
 
@@ -17,9 +18,10 @@ $(".main").click(function(){
 
 // script page1 start
 
-function come() {
-   thing2.classList.toggle('tyr');
-}
+
+$(".thing").click(function(){
+   $(".thing2").toggleClass('tyr');
+});
 
 // script page1 end
 
@@ -101,6 +103,10 @@ $(".img24").click(function(){
 
 
 // script page2 end
+
+// script changing pages start
+
+
 
 $(function(){
    $('a[href^="#"]').click(function(){

@@ -15,13 +15,7 @@ ul {
 .wrapper {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  width: 100%;
   overflow: hidden;
-}
-
-.page1, .page2, .page3 {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .header {
@@ -205,6 +199,7 @@ ul {
 .page1 {
   background: rgba(53, 47, 45, 0.8);
   overflow: hidden;
+  padding: 100px 0 0 0;
 }
 
 .page1_items {
@@ -323,14 +318,6 @@ ul {
   transition: all 0.3s ease;
 }
 
-.thing2:target {
-  top: 50%;
-  left: 30%;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
-}
-
 .tyr {
   top: 50%;
   left: 30%;
@@ -351,6 +338,9 @@ ul {
       -ms-flex-pack: end;
           justify-content: end;
   padding: 135px 182px 79px 0;
+}
+.page2 .arr img {
+  cursor: pointer;
 }
 .page2 .arr > *:not(:last-child) {
   margin: 0 41px 0 0;

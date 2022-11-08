@@ -18,20 +18,8 @@ ul {
 .wrapper {
    font-family: 'Montserrat', sans-serif;
    font-style: normal;
-   width: 100%;
    overflow: hidden;
 }
-
-// Change pages start
-
-
-
-.page1, .page2 , .page3 {
-   transition: all .3s ease;
-}
-
-
-// Change pages end
 
 .header {
    position: fixed;
@@ -200,6 +188,7 @@ ul {
 .page1 {
    background: rgba(53, 47, 45, 0.8);
    overflow: hidden;
+   padding: 100px 0 0 0;
 }
 
 .page1_items {
@@ -297,13 +286,6 @@ ul {
    transition: all .3s ease;
 }
 
-.thing2:target {
-   top: 50%;
-   left: 30%;
-   transform: scale(1);
-   opacity: 1;
-}
-
 .tyr {
    top: 50%;
    left: 30%;
@@ -319,6 +301,9 @@ ul {
    background: rgba(53, 47, 45, 0.8);
    overflow: hidden;
    .arr {
+      img {
+         cursor: pointer;
+      }
       display: flex;
       justify-content: end;
       padding: 135px 182px 79px 0;
