@@ -10,7 +10,6 @@ $(".main").click(function(){
    $(".menu_burger2").removeClass('opac1');
    $(".menu_burger").removeClass('opac0');
    $(".menu2").removeClass('left0');
-   $(".thing2").removeClass('tyr');
 });
 
 
@@ -22,6 +21,7 @@ $(".main").click(function(){
 $(".thing").click(function(){
    $(".thing2").toggleClass('tyr');
 });
+
 
 // script page1 end
 
