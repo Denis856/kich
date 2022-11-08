@@ -19,68 +19,34 @@ ul {
    font-family: 'Montserrat', sans-serif;
    font-style: normal;
    width: 100%;
+   overflow: hidden;
 }
 
 // Change pages start
 
-.content {
-   position: relative;
-}
+
 
 .page1, .page2 , .page3 {
-   position: absolute;
-   width: 100%;
-   top: 0;
-   left: 0;
    transition: all .3s ease;
 }
 
-.page1 {
-   transform: translateY(-100%);
-   z-index: -1;
-   opacity: 0;
-}
-
-.page2 {
-   transform: translateY(-100%);
-   z-index: -1;
-   opacity: 0;
-}
-
-.page3 {
-   transform: translateX(-100%);
-   z-index: -1;
-   opacity: 0;
-}
-
-.show1 {
-   transform: translateY(0);
-   z-index: 50;
-   opacity: 1;
-}
-
-.show2 {
-   transform: translateX(0);
-   z-index: 50;
-   opacity: 1;
-}
 
 // Change pages end
 
 .header {
+   position: fixed;
+   top: 0;
+   width: 100%;
    background: #413837;
    padding: 16px 150px;
    z-index: 100;
+   @include center2;
    .logo {
       img {
          width: 80px;
          height: 80px;
       }
    }
-   .nav {
-      margin: 0 auto;
-   }
-   @include center;
    .menu_list {
       @include center;
    }
@@ -122,7 +88,6 @@ ul {
 
 .main {
    background: url('../img/bg1.jpg') 0 0/ cover no-repeat;
-   height: 140vh;
    padding: 0 0 5% 0;
 }
 
@@ -473,7 +438,6 @@ ul {
 .page3 {
    background: rgba(75, 66, 64, 0.9);
    @include center2;
-   height: 100vh;
    overflow: hidden;
    img {
       max-width: 100%;
@@ -991,9 +955,6 @@ ul {
    }
    .btn {
       left: 83%;
-   }
-   .main {
-      height: 120vh;
    }
 }
 

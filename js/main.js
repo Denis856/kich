@@ -102,44 +102,10 @@ $(".img24").click(function(){
 
 // script page2 end
 
-// script changing pages start
-
-var page1 = document.getElementById('page1');
-var page2 = document.getElementById('page2');
-var page3 = document.getElementById('page3');
-var main = document.getElementById('main');
-
-function show1() {
-   page1.classList.toggle('show1');
-   page2.classList.remove('show1');
-   page3.classList.remove('show2');
-   main.classList.remove('height2');
-   page3.classList.remove('height1');
-   main.classList.toggle('height22');
-   page1.classList.toggle('height22');
-   main.classList.remove('height33');
-}
-
-function show2() {
-   page2.classList.toggle('show1');
-   page1.classList.remove('show1');
-   page3.classList.remove('show2');
-   main.classList.remove('height2');
-   page3.classList.remove('height1');
-   main.classList.remove('height22');
-   page1.classList.remove('height22');
-   main.classList.remove('height33');
-}
-
-function show3() {
-   page3.classList.toggle('show2');
-   page3.classList.toggle('height1');
-   page1.classList.remove('show1');
-   page2.classList.remove('show1');
-   main.classList.toggle('height2');
-   main.classList.remove('height22');
-   page1.classList.remove('height22');
-   main.classList.toggle('height33');
-}
-
-// script changing pages end
+$(function(){
+   $('a[href^="#"]').click(function(){
+   var target = $(this).attr('href');
+   $('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+   return false;
+   });
+   });
