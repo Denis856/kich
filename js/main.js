@@ -22,6 +22,11 @@ $(".thing").click(function(){
    $(".thing2").toggleClass('tyr');
 });
 
+$(".thing2").click(function(){
+   $(".thing2").removeClass('tyr');
+});
+
+
 
 // script page1 end
 

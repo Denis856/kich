@@ -301,6 +301,7 @@ ul {
 }
 
 .thing2 {
+  cursor: pointer;
   position: absolute;
   width: 20%;
   top: 0;
