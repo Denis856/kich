@@ -1,0 +1,221 @@
+
+$wd1: 950px;
+$wd2: 767px;
+$wd3: 400px;
+
+.page5 {
+   padding: 69px 0;
+   @media(max-width: $wd2) {
+      padding: 50px 0;
+   }
+   &__img1 {
+      display: block;
+      padding: 0 0 36px 0;
+      margin: 0 auto;
+      img {
+         width: 62px;
+         height: 62px;
+      }
+   }
+   &__items {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      @media(max-width: $wd1) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+   &__item {
+      width: 48%;
+      height: 250px;
+      padding: 28px 54px;
+      text-align: center;
+      @media(max-width: $wd1) {
+         padding: 30px;
+         width: 70%;
+      }
+      @media(max-width: $wd2) {
+         width: 85%;
+      }
+      @media(max-width: 500px) {
+         padding: 30px 10px;
+         width: 100%;
+      }
+   }
+}
+.item5 {
+   &__text1 {
+      font-family: 'Vollkorn', serif;
+      font-size: 26px;
+      line-height: 33 / 26 *100%;
+      padding: 0 0 24px 0;
+      @media(max-width: $wd2) {
+         font-size: 20px;
+      }
+   }
+   &__img {
+      width: 64px;
+      height: 64px;
+      margin: 0 0 10px 0;
+   }
+   &__text2 {
+      font-size: 14px;
+      line-height: 20 / 14 * 100%;
+      text-transform: uppercase;
+      color: #ABABAB;
+      @media(max-width: $wd2) {
+         font-size: 12px;
+      }
+   }
+}
+
+.page6 {
+   padding: 79px 0 29px 0;
+   @media(max-width: $wd2) {
+      padding: 60px 0 10px 0;
+   }
+   background: url('../img/bg6.jpg') 0 0/ cover no-repeat;
+   &__items {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media(max-width: 650px) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+   &__item {
+      padding: 0 63px 40px 63px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      @media(max-width: $wd1) {
+         padding: 0 20px 40px 20px;
+      }
+      @media(max-width: $wd2) {
+         padding: 0 0 40px 0;
+      }
+   }
+}
+
+.item6 {
+   &__img {
+      margin: 0 0 34px 0;
+      @media(max-width: $wd1) {
+         margin: 0 0 20px 0;
+      }
+   }
+   &__title {
+      padding: 0 0 20px 0;
+      @media(max-width: $wd1) {
+         padding: 0 0 14px 0;
+      }
+   }
+   &__link {
+      font-family: 'Vollkorn', serif;
+      font-size: 17px;
+      line-height: 22 / 17 * 100%;
+      color: #212121;
+      padding: 0 0 22px 0;
+      &:last-child {
+         padding: 0 0 0 0;
+      }
+      @media(max-width: $wd1) {
+         padding: 0 0 14px 0;
+      }
+   }
+   &__link2 {
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      line-height: 22 / 17 * 100%;
+      color: #212121;
+      margin: 0 0 17px 0;
+      @media(max-width: $wd1) {
+         margin: 0 0 10px 0;
+      }
+      &:last-child {
+         margin: 0 0 0 0;
+      }
+   }
+   &__img2 {
+      width: 14px;
+      height: 14px;
+      margin: 0 9px 0 0;
+   }
+}
+
+.footer {
+   padding: 68px 0 75px 0;
+   background: #000000;
+   &__body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+   }
+   &__form {
+      width: 60%;
+      margin: 0 0 21px 0;
+      @media(max-width: $wd1) {
+         width: 70%;
+      }
+      @media(max-width: $wd2) {
+         width: 80%;
+      }
+      @media(max-width: 500px) {
+         width: 90%;
+      }
+      @media(max-width: $wd3) {
+         width: 100%;
+      }
+   }
+   &__input,
+   &__textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      font-family: 'Vollkorn', serif;
+      font-size: 17px;
+      line-height: 22 / 17 * 100%;
+      color: #FFFFFF;
+      text-indent: 31px;
+      border: 0;
+      outline: 0;
+   }
+   &__textarea {
+      height: 127px;
+      padding: 17px 0 0 0;
+   }
+   &__input {
+      height: 57px;
+   }
+   &__input1 {
+      background: rgba(255, 255, 255, 0.18);
+   }
+   &__btn {
+      border: 1px solid #8BCAC3;
+      color: #8BCAC3;
+      font-family: 'Vollkorn', serif;
+      font-size: 17px;
+      line-height: 22 / 17 * 100%;
+      text-align: center;
+      padding: 15px 60px;
+      margin: 0 0 37px 0;
+      background: transparent;
+      cursor: pointer;
+   }
+   &__logo {
+      width: 43px;
+      height: 46px;
+      margin: 0 0 14px 0;
+   }
+   &__text {
+      font-family: 'Vollkorn', serif;
+      font-size: 15px;
+      line-height: 22 / 15 * 100%;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.4);
+   }
+}
