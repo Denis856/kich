@@ -55,3 +55,15 @@ quetion.forEach(item =>{
         item.querySelector('.item9__text2').classList.toggle('active');
     });
 });
+
+// next
+
+
+
+$(function(){
+    $('a[href^="#"]').click(function(){
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+    return false;
+    });
+    });

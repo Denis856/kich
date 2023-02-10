@@ -96,15 +96,19 @@ button {
 .header {
    padding: 40px 0 0 0;
    @media(max-width: $wd3) {
-      padding: 20px 0 0 0;
+      padding: 30px 0 0 0;
    }
    &__body {
       display: flex;
       align-items: center;
+      justify-content: space-between;
    }
    &__logo {
-      flex: 1 1 auto;
       position: relative;
+      width: 203px;
+      @media(max-width: $wd2) {
+         width: 150px;
+      }
       &::after {
          content: '';
          position: absolute;
@@ -126,11 +130,11 @@ button {
       display: flex;
       align-items: center;
       @media(max-width: $wd3) {
-         padding: 50px 0 0 0;
-         position: absolute;
+         padding: 100px 0 0 0;
+         position: fixed;
          width: 100%;
          height: 100vh;
-         background: rgba(0, 0, 0, 0.8);
+         background: rgba(0, 0, 0, 0.9);
          flex-direction: column;
          top: 0;
          left: 50%;
@@ -157,7 +161,7 @@ button {
       &::after {
          content: '';
          position: absolute;
-         width: 20px;
+         width: 25px;
          height: 1.5px;
          background: #000;
          top: 0;
@@ -165,7 +169,7 @@ button {
          cursor: pointer;
          transition: all .3s ease;
          @media(max-width: $wd3) {
-            left: -20px;
+            left: -30px;
          }
       }
       &::before {
@@ -175,8 +179,15 @@ button {
          top: -6px;
       }
       &.active {
+         position: fixed;
+         top: 45px;
+         right: 15px;
          &::before {
             top: 0;
+            height: 5px;
+            width: 35px;
+            left: -40px;
+            border-radius: 5px;
             transform: rotate(45deg);
             background: #fff;
          }
@@ -184,6 +195,10 @@ button {
       &.active {
          & span {
             opacity: 0;
+            height: 5px;
+            width: 35px;
+            left: -40px;
+            border-radius: 5px;
             transform: scale(0.1);
             background: #fff;
          }
@@ -191,6 +206,10 @@ button {
       &.active {
          &::after {
             top: 0;
+            height: 5px;
+            width: 35px;
+            left: -40px;
+            border-radius: 5px;
             transform: rotate(-45deg);
             background: #fff;
          }
@@ -224,6 +243,9 @@ button {
       font-size: 13px;
       color: #000;
       margin: 0 0 0 10px;
+      @media(max-width: $wd3) {
+         color: #fff;
+      }
    }
 }
 
@@ -293,19 +315,21 @@ button {
    &__btn1 {
       margin: 0 40px 0 0;
       @media(max-width: $wd4) {
-         margin: 0 0 20px 0;
+         margin: 0 0 40px 0;
       }
    }
    &__btn2 {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 1;
-      margin: 0 25px 0 0;
-      @media(max-width: $wd1) {
-         font-size: 16px;
-      }
-      @media(max-width: $wd4) {
-         margin: 0 0 25px 0;
+      display: flex;
+      align-items: end;
+      p {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 1;
+         margin: 0 20px 0 0;
+         @media(max-width: $wd1) {
+            font-size: 16px;
+            margin: 0 15px 0 0;
+         }
       }
    }
 }
@@ -873,6 +897,9 @@ button {
 
 .world {
    padding: 150px 0;
+   @media(max-width: $wd2) {
+      padding: 150px 0 100px 0;
+   }
    &__above {
       color: #4353FF;
       padding: 0 0 24px 0;
@@ -1060,7 +1087,7 @@ button {
       margin: 0 0 30px 0;
       display: flex;
       flex-direction: column;
-      transition: .3s;
+      transition: all .3s ease;
       @media(max-width: $wd1) {
          padding: 0 0 25px 0;
       }
@@ -1109,7 +1136,7 @@ button {
       }
       &.active {
          opacity: 1;
-         height: 100%;
+         height: 30px;
          padding: 20px 0;
       }
    }
@@ -1119,6 +1146,9 @@ button {
    background: #000;
    color: #fff;
    padding: 170px 0 20px 0;
+   @media(max-width: $wd3) {
+      padding: 70px 0 20px 0;
+   }
    &__title {
       padding: 0 0 88px 0;
       span {
@@ -1129,6 +1159,9 @@ button {
       display: flex;
       align-items: start;
       padding: 0 0 125px 0;
+      @media(max-width: $wd3) {
+         flex-wrap: wrap;
+      }
    }
    &__column1 {
       flex: 1 1 auto;
@@ -1136,6 +1169,9 @@ button {
       line-height: 28 / 16 * 100%;
       margin: 0 0 10px 0;
       color: #666666;
+      @media(max-width: $wd3) {
+         padding: 0 40px 40px 0;
+      }
    }
    &__column {
       display: flex;
@@ -1144,14 +1180,29 @@ button {
       &:last-child {
          margin: 0 0 0 0;
       }
+      @media(max-width: $wd2) {
+         margin: 0 60px 0 0;
+      }
+      @media(max-width: $wd3) {
+         margin: 0 60px 40px 0;
+      }
+      @media(max-width: $wd4) {
+         margin: 0 40px 40px 0;
+      }
    }
    &__logo {
       width: 203px;
       height: 28px;
       margin: 0 0 18px 0;
+      @media(max-width: $wd2) {
+         margin: 0 0 12px 0;
+      }
    }
    &__text {
       font-size: 16px;
+      @media(max-width: $wd2) {
+         font-size: 14px;
+      }
    }
    &__mail_box {
       display: flex;
@@ -1161,6 +1212,9 @@ button {
       width: 30px;
       height: 21px;
       margin: 0 7px 0 0;
+      @media(max-width: $wd2) {
+         font-size: 14px;
+      }
    }
    &__link {
       font-size: 18px;
@@ -1168,6 +1222,10 @@ button {
       margin: 0 0 40px 0;
       &:last-child {
          margin: 0 0 0 0;
+      }
+      @media(max-width: $wd2) {
+         margin: 0 0 20px 0;
+         font-size: 16px;
       }
    }
    &__last {
